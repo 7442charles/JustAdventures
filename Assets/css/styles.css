@@ -1,0 +1,14 @@
+.card-img {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* Button hover effects */
+.btn-explore {
+    transition: background-color 0.3s ease;
+}
+
+.btn-explore:hover {
+    background-color: #f97316;
+}

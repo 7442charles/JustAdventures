@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body class="font-sans">
+
+  <!-- Top Bar -->
+  <div class="bg-red-600 text-white flex justify-between items-center px-6 py-2">
+    <div class="flex space-x-4">
+      <span>Follow us</span>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div>
+      <span>0759-418-593</span>
+    </div>
+  </div>
+
+<!-- Navigation Bar -->
+<nav class="bg-gray-800 text-white py-3">
+  <div class="container mx-auto flex justify-between items-center px-4">
+    
+    <!-- Logo or Brand Name -->
+    <div class="text-xl font-bold">Just Adventures</div>
+    
+    <!-- Hamburger Icon (Mobile) -->
+    <div class="md:hidden">
+      <button class="focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Links for Desktop -->
+    <div class="hidden md:flex justify-center space-x-6">
+      <a href="#" class="hover:text-red-500">Home</a>
+      <a href="#" class="hover:text-red-500">Destinations</a>
+      <a href="#" class="hover:text-red-500">What's hot?</a>
+      <a href="#" class="hover:text-red-500">Explore</a>
+      <a href="#" class="hover:text-red-500">About us</a>
+      <a href="#" class="hover:text-red-500">Upcoming</a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden">
+    <div class="flex flex-col space-y-2 px-4 py-4 bg-gray-800">
+      <a href="#" class="hover:text-red-500">Home</a>
+      <a href="#" class="hover:text-red-500">Destinations</a>
+      <a href="#" class="hover:text-red-500">What's hot?</a>
+      <a href="#" class="hover:text-red-500">Explore</a>
+      <a href="#" class="hover:text-red-500">About us</a>
+      <a href="#" class="hover:text-red-500">Upcoming</a>
+    </div>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('Assets/images/hero_section.png')">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+      <h1 class="text-4xl font-bold mb-4">Embark on International Adventures</h1>
+      <p class="mb-6">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+      <a href="#" class="bg-red-600 px-4 py-2 rounded">Explore Now</a>
+    </div>
+  </section>
+
+  
+
+  <!-- safari section -->
+  <section class="text-center py-12">
+    <h2 class="text-2xl md:text-4xl font-semibold text-gray-800">
+        when we say <span class="text-red-500">safari</span>, this is what we mean
+    </h2>
+
+    <!-- Cards Section -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
+        <!-- Lovely views card -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <div class="card-img" style="background-image: url('Assets/images/lovely.png');"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <h3 class="text-xl font-semibold">Lovely views</h3>
+                <button class="mt-2 py-2 px-4 bg-red-500 text-white rounded-full btn-explore">explore now</button>
+            </div>
+        </div>
+
+        <!-- Scenic Beaches card -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <div class="card-img" style="background-image: url('Assets/images/scenic_beaches.png');"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <h3 class="text-xl font-semibold">Scenic Beaches</h3>
+                <button class="mt-2 py-2 px-4 bg-red-500 text-white rounded-full btn-explore">explore now</button>
+            </div>
+        </div>
+
+        <!-- Game Drives card -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <div class="card-img" style="background-image: url('Assets/images/game_drive.png');"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <h3 class="text-xl font-semibold">Game Drives</h3>
+                <button class="mt-2 py-2 px-4 bg-red-500 text-white rounded-full btn-explore">explore now</button>
+            </div>
+        </div>
+
+        <!-- Natural Beauties card -->
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <div class="card-img" style="background-image: url('Assets/images/natural_beauties.png');"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <h3 class="text-xl font-semibold">Natural Beauties</h3>
+                <button class="mt-2 py-2 px-4 bg-red-500 text-white rounded-full btn-explore">explore now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Top Deals Section -->
+  <section class="py-16 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-8">Top Deals Available</h2>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Each card -->
+      <!-- Start Malaysia -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/malaysia.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Malaysia Singapore</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Malaysia -->
+
+      <!-- Diani Ukunda -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/DiANI_Ukunda.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Diani Ukunda</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Diani Ukunda -->
+
+      <!-- Masaai Mara -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/masai_mara.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Masaai Mara</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Masaai Mara -->
+
+      <!-- Amboseli Park -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/amboseli_park.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Amboseli Park</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Amboseli Park -->
+
+      <!-- Namanga Day Trip -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/Namanga.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Namanga Day Trip</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Namanga Day Trip -->
+
+      <!-- Kereita Day Trip -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <img src="Assets/images/kereita.png" alt="Deal Image" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-semibold mt-4">Kereita Day Trip</h3>
+        <p class="text-gray-700 mt-2">From the wild savannahs to exotic global destinations, your dream trip is closer than ever!</p>
+        <a href="#" class="bg-red-600 text-white px-3 py-1 mt-4 inline-block rounded-full text-sm">Book Now</a>
+      </div>
+      <!-- End Kereita Day Trip -->
+    </div>
+  </section>
+
+
+
+  <!-- Corporate Team Building Section -->
+  <section class="py-16 text-center">
+    <div class="container mx-auto">
+      <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-4 text-red-600">Corporate Team Building Packages</h2>
+        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded">Explore Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 bg-cover bg-center" style="background-image: url('Assets/images/newsletter.png')">
+    <div class="container mx-auto text-center text-white">
+      <h2 class="text-3xl font-bold">Experience the thrill of adventure like never before...</h2>
+      <p class="mt-4">Wanna know our new offers? Subscribe to our newsletter</p>
+      <div class="mt-6 flex justify-center">
+        <input type="email" class="px-4 py-2 rounded-l" placeholder="Enter your email">
+        <button class="bg-red-600 text-white px-6 py-2 rounded-r">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-cover bg-center" style="background-image: url('Assets/images/footer.png');">
+    <div class="bg-opacity-custom w-full h-full absolute top-0 left-0"></div>
+
+    <div class="relative z-10 container mx-auto py-12 px-6 text-center text-white">
+        <h2 class="text-4xl font-bold mb-8">Quick links</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-24">
+            <div>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">What's hot?</a></li>
+                    <li><a href="#" class="hover:underline">About us</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:underline">Destinations</a></li>
+                    <li><a href="#" class="hover:underline">Explore</a></li>
+                    <li><a href="#" class="hover:underline">Upcoming</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizontal line -->
+    <div class="relative z-10 container mx-auto">
+        <div class="border-t border-white w-2/3 mx-auto mt-8"></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>
